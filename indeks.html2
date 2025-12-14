@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 16px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .soal {
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+    button {
+      padding: 8px 14px;
+      margin-top: 8px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    .jawaban {
+      display: none;
+      margin-top: 6px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    function toggleJawaban(id) {
+      var el = document.getElementById(id);
+      el.style.display = el.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    {{ content }}
+  </div>
+</body>
+</html>
+---
+layout: default
+title: Latihan Soal
+---
+
+## 📚 Latihan Soal Pilihan Ganda
+
+---
+
+## 🌍 A. Soal Nama Ibukota (1–5)
+
+<div class="soal">
+1. Ibukota Indonesia adalah …
+<br>
+A. Surabaya  
+B. Bandung  
+C. Jakarta  
+
+<button onclick="toggleJawaban('j1')">Lihat Jawaban</button>
+<div id="j1" class="jawaban">Jawaban: C (Jakarta)</div>
+</div>
+
+<div class="soal">
+2. Ibukota Jepang adalah …
+<br>
+A. Osaka  
+B. Tokyo  
+C. Kyoto  
+
+<button onclick="toggleJawaban('j2')">Lihat Jawaban</button>
+<div id="j2" class="jawaban">Jawaban: B (Tokyo)</div>
+</div>
+
+<div class="soal">
+3. Ibukota Malaysia adalah …
+<br>
+A. Penang  
+B. Johor  
+C. Kuala Lumpur  
+
+<button onclick="toggleJawaban('j3')">Lihat Jawaban</button>
+<div id="j3" class="jawaban">Jawaban: C (Kuala Lumpur)</div>
+</div>
+
+<div class="soal">
+4. Ibukota Thailand adalah …
+<br>
+A. Chiang Mai  
+B. Bangkok  
+C. Phuket  
+
+<button onclick="toggleJawaban('j4')">Lihat Jawaban</button>
+<div id="j4" class="jawaban">Jawaban: B (Bangkok)</div>
+</div>
+
+<div class="soal">
+5. Ibukota Korea Selatan adalah …
+<br>
+A. Busan  
+B. Incheon  
+C. Seoul  
+
+<button onclick="toggleJawaban('j5')">Lihat Jawaban</button>
+<div id="j5" class="jawaban">Jawaban: C (Seoul)</div>
+</div>
+
+---
+
+## ➗ B. Soal Aljabar (6–10)
+
+<div class="soal">
+6. x + 5 = 12, maka nilai x adalah …
+<br>
+A. 5  
+B. 7  
+C. 17  
+
+<button onclick="toggleJawaban('j6')">Lihat Jawaban</button>
+<div id="j6" class="jawaban">Jawaban: B (7)</div>
+</div>
+
+<div class="soal">
+7. 2x = 10, maka x = …
+<br>
+A. 5  
+B. 10  
+C. 20  
+
+<button onclick="toggleJawaban('j7')">Lihat Jawaban</button>
+<div id="j7" class="jawaban">Jawaban: A (5)</div>
+</div>
+
+<div class="soal">
+8. x − 4 = 6, maka x = …
+<br>
+A. 2  
+B. 10  
+C. 24  
+
+<button onclick="toggleJawaban('j8')">Lihat Jawaban</button>
+<div id="j8" class="jawaban">Jawaban: B (10)</div>
+</div>
+
+<div class="soal">
+9. 3x = 15, maka x = …
+<br>
+A. 5  
+B. 12  
+C. 18  
+
+<button onclick="toggleJawaban('j9')">Lihat Jawaban</button>
+<div id="j9" class="jawaban">Jawaban: A (5)</div>
+</div>
+
+<div class="soal">
+10. x/2 = 8, maka x = …
+<br>
+A. 4  
+B. 16  
+C. 10  
+
+<button onclick="toggleJawaban('j10')">Lihat Jawaban</button>
+<div id="j10" class="jawaban">Jawaban: B (16)</div>
+</div>
